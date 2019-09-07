@@ -1,3 +1,5 @@
+// this will be the search facets
+
 import React, { Component } from "react";
 import Jumbotron from "../components/Jumbotron";
 import DeleteBtn from "../components/DeleteBtn";
@@ -12,6 +14,16 @@ class Books extends Component {
   };
 
   // Add code here to get all books from the database and save them to this.state.books
+  componentDidMount = () => {
+    // code for initial page load
+  }
+
+  loadBooks = () => {
+    // find all the books in the API
+    API.getbooks();
+    console.log(API.getbooks())
+
+  }
 
   render() {
     return (
