@@ -3,7 +3,6 @@ const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 const mongoose = require("mongoose");
-const 
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -14,7 +13,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/googlebooks";
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
