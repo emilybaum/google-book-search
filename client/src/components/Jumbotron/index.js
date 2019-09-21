@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function Jumbotron({ children }) {
   return (
@@ -7,6 +8,10 @@ function Jumbotron({ children }) {
       className="jumbotron"
     >
       {children}
+      <Link to="/saved"><button>test saved</button></Link>
+      <Link to="/search"><button>test search</button></Link>
+
+      
     </div>
   );
 }
