@@ -7,18 +7,12 @@ import { Input, TextArea, FormBtn } from "../components/Form";
 import API from "../utils/API";
 import Nav from "../components/Nav";
 
-class Saved extends Component {
-    state = {
-        books: [],
-        title: "test title",
-        author: "test author",
+function Saved(props) {
 
-    };
-}
 
 // THIS PAGE IS A WORK IN PROGRESS
 
-render() {
+
     return (
         <Container fluid>
             <Nav />
@@ -47,7 +41,7 @@ render() {
             </Row >
         </Container >
     )
-}
 
+}
 
 export default Saved;

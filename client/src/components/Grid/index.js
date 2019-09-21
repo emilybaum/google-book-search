@@ -17,10 +17,10 @@ export function Row({ fluid, children }) {
 export function Col({ size, children }) {
   return (
     <div
-      className={size
+      className={`mx-auto ${size
         .split(" ")
         .map(size => "col-" + size)
-        .join(" ")}
+        .join(" ")}`}
     >
       {children}
     </div>

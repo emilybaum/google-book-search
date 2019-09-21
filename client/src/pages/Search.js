@@ -32,16 +32,18 @@ class Books extends Component {
       <Container fluid>
         <Nav />
         <Row>
-          <Col size="md-6">
+          <Col size="md-12">
             <Jumbotron>
               <h1>What Books Should I Read?</h1>
             </Jumbotron>
-            <form>
-              <Input name="title" placeholder="Title (required)" />
-              <Input name="author" placeholder="Author (required)" />
-              <TextArea name="synopsis" placeholder="Synopsis (Optional)" />
-              <FormBtn>Submit Book</FormBtn>
-            </form>
+            <Col size="md-6">
+              <form>
+                <Input name="title" placeholder="Title (required)" />
+                <Input name="author" placeholder="Author (required)" />
+                <TextArea name="synopsis" placeholder="Synopsis (Optional)" />
+                <FormBtn>Submit Book</FormBtn>
+              </form>
+            </Col>
           </Col>
         </Row>
       </Container>
