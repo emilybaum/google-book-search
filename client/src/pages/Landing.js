@@ -36,6 +36,7 @@ class Books extends Component {
                     <Col size="md-12">
                         <Jumbotron>
                             <h1>Welcome to Google Boos Search!</h1>
+                            <h3>You can add books to read, or search those that are already saved</h3>
                         </Jumbotron>
                         
                     </Col>

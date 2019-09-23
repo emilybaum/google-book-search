@@ -10,6 +10,9 @@ import API from "../utils/API"
 import Nav from "../components/Nav"
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
+
+
+
 class Books extends Component {
   // Initialize this.state.books as an empty array
   state = {
@@ -35,7 +38,7 @@ class Books extends Component {
         <Row>
           <Col size="md-12">
             <Jumbotron>
-              <h1>What Books Should I Read?</h1>
+              <h1>Add Books To Read?</h1>
 
             </Jumbotron>
             <Col size="md-6">

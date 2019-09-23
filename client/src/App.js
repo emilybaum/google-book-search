@@ -2,6 +2,8 @@ import React from "react";
 import Search from "./pages/Search";
 import Saved from "./pages/Saved"
 import Landing from "./pages/Landing"
+import Nav from "./components/Nav"
+
 
 
 // adding routes
