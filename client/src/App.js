@@ -2,20 +2,25 @@ import React from "react";
 import Search from "./pages/Search";
 import Saved from "./pages/Saved"
 import Landing from "./pages/Landing"
-import Nav from "./components/Nav"
-
+import NotFound from "./pages/NotFoundPage"
 
 
 // adding routes
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <div>
       <Router>
-        <Route exact path="/" component={Landing}/>
-        <Route exact path="/search" component={Search} />
-        <Route exact path="/saved" component={Saved} />
+        <Switch>
+          <Route exact path="/" component={Landing}/>
+          <Route exact path="/search" component={Search} />
+          <Route exact path="/saved" component={Saved} />
+          <Route path="/404" component={NotFound}/>
+          <Redirect to="404"  />
+
+        </Switch>
       </Router>
     </div>
   );
