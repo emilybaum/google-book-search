@@ -25,8 +25,8 @@ function Jumbotron({ children }) {
     >
       {children}
 
-      <Link to="/search"><button style={buttons} type="button" className="btn btn-outline-secondary">Search for Books</button></Link>
-      <Link to="/saved"><button style={buttons} type="button" className="btn btn-outline-secondary">Saved Books</button></Link>
+      <Link to="/search"><button style={buttons} type="button" className="btn btn-secondary">Search for Books</button></Link>
+      <Link to="/saved"><button style={buttons} type="button" className="btn btn-secondary">Saved Books</button></Link>
       
       
     </div>
