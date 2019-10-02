@@ -1,11 +1,7 @@
-// this will be the search facets
-
 import React, { Component } from "react";
-// import Jumbotron from "../components/Jumbotron";
 import { Col, Row, Container } from "../components/Grid";
 import Nav from "../components/Nav"
 import NotFound from "../components/NotFound"
-// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Books extends Component {
   
