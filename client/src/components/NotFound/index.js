@@ -25,7 +25,7 @@ function Jumbotron({ children }) {
         >
             {children}
 
-            <Link to="/"><button style={buttons} type="button" className="btn btn-secondary">let's go back home</button></Link>
+            <Link to="/"><button style={buttons} type="button" className="btn btn-secondary">Go back home</button></Link>
 
 
         </div>
